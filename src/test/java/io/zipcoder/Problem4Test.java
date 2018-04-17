@@ -5,23 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Problem4Test {
-
-    @Test
-    void testIsDromeTrue() {
-        String input = "baaab";
-
-        assertTrue(Problem4.isDrome(input));
-    }
-
-
-    @Test
-    void testIsDromeFalse() {
-        String input = "dbca";
-
-        assertFalse(Problem4.isDrome(input));
-    }
-
+class Problem4Test {
     @Test
     void testDoesContainDromeTrue() {
         String input = "abdda";

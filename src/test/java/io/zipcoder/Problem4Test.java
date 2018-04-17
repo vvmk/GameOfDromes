@@ -1,6 +1,8 @@
 package io.zipcoder;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Problem4Test {
@@ -17,7 +19,7 @@ public class Problem4Test {
     void testIsDromeFalse() {
         String input = "dbca";
 
-        assertTrue(Problem4.isDrome(input));
+        assertFalse(Problem4.isDrome(input));
     }
 
     @Test
@@ -32,6 +34,6 @@ public class Problem4Test {
     void testDoesContainDromeFalse() {
         String input = "abcdefg";
 
-        assertTrue(Problem4.doesContainDrome(input));
+        assertFalse(Problem4.doesContainDrome(input));
     }
 }
